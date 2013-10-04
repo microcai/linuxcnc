@@ -1,5 +1,5 @@
 
-EXTRA_CFLAGS += -I /usr/include/python2.7
+INCLUDES += /usr/include/python2.7
 EMCSVRSRCS := \
 	emc/task/emcsvr.cc
 USERSRCS += $(EMCSVRSRCS)
