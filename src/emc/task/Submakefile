@@ -1,4 +1,5 @@
 
+CXXFLAGS += -I /usr/include/python2.7
 EMCSVRSRCS := \
 	emc/task/emcsvr.cc
 USERSRCS += $(EMCSVRSRCS)
