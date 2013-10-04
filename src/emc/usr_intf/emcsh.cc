@@ -3233,7 +3233,6 @@ static int emc_probed_pos(ClientData clientdata,
 // ********************************************************************
 //      Pendant read routine from /dev/psaux, /dev/ttyS0, or /dev/ttyS1
 // *********************************************************************
-
 static int emc_pendant(ClientData clientdata,
 		       Tcl_Interp * interp, int objc,
 		       Tcl_Obj * CONST objv[])
@@ -3287,8 +3286,13 @@ static int emc_pendant(ClientData clientdata,
 		}
 	    }
 
-	    sprintf(interp->result, "%i %i %d %d %i", inBytes[0],
+	    char * result = (char*) malloc(80);
+
+	    sprintf(result, "%i %i %d %d %i", inBytes[0],
 		    inBytes[1], inBytes[2], inBytes[3], inBytes[4]);
+
+		Tcl_SetResult(interp, result, (Tcl_FreeProc*)free);
+
 	    return TCL_OK;
 	}
     }
