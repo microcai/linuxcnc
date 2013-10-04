@@ -1,4 +1,4 @@
-#!/usr/bin/python2.4
+#!/usr/bin/python2
 # -*- encoding: utf-8 -*-
 #    This is pncconf, a graphical configuration editor for LinuxCNC
 #    Chris Morley copyright 2009
