@@ -11,5 +11,5 @@
 ../share/linuxcnc/linuxcnc-wizard.gif: ../linuxcnc-wizard.gif
 	cp $< $@
 
-PYTARGETS += ../bin/stepconf ../share/linuxcnc/stepconf.glade ../share/linuxcnc/linuxcnc-wizard.gif
-PYI18NSRCS += emc/usr_intf/stepconf/stepconf.py emc/usr_intf/stepconf/stepconf.glade
+# PYTARGETS += ../bin/stepconf ../share/linuxcnc/stepconf.glade ../share/linuxcnc/linuxcnc-wizard.gif
+# PYI18NSRCS += emc/usr_intf/stepconf/stepconf.py emc/usr_intf/stepconf/stepconf.glade
